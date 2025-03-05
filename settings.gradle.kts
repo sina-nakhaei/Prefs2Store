@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Prefs2Store"
 include(":app")
+include(":Prefs2Store")
