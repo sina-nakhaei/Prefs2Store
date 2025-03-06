@@ -54,7 +54,7 @@ class Prefs2Store(
             sharedPrefs.edit().clear().apply()
     }
 
-    suspend fun isMigrated(dataStore: DataStore<Preferences>) =
+    suspend fun isMigrated() =
         dataStore
             .data
             .map { it[booleanPreferencesKey("migration_complete")] ?: false }
